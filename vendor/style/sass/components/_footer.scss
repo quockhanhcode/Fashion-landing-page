@@ -1,0 +1,186 @@
+.footer{
+    padding: 12rem 0 12rem 0;
+    background-color: $bg-color-1;
+
+    &__top{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__logo,
+    &__form{
+        width: 50%;
+    }
+
+    &__decs{
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-top: 3rem;
+    }
+
+    &__title{
+        font-size: 2.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #22262a;
+    }
+
+    &__form{
+        .form-email{
+            display: flex;
+            align-items: center;
+            margin-top: 3rem;
+            background-color: #fff;
+            justify-content: space-between;
+            padding: 1.7rem;
+            border-radius: 5px;
+        }
+    }
+    &__input{
+        border: 0;
+        outline: none;
+        background-color: #fff;
+        font-size: 1.4rem;
+        flex-grow: 1 //thanh nhập input sẽ dài đến sát button
+    }
+
+    &__button{
+        background-color: white;
+        outline: none;
+    border: 0;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: #535659;
+    font-weight: 500;
+    }
+
+    &__bottom{
+        margin-top: 8rem;
+        display: flex;
+
+        &-address,
+        &-menu{
+            width: 50%;
+        }
+
+        .address-group{
+            display: flex;
+            align-items: center;
+
+            .icon-local{
+                font-size: 1.7rem;
+                color: $text-color-black;
+            }
+            .footer__local{
+                font-weight: 500;
+                font-size: 1.5rem;
+                margin-left: 1.6rem;
+            }
+        }
+
+        .footer__contact{
+            margin-top: 3.5rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+            display: inline-block;
+
+            &-us{
+                &:first-child{
+                    padding-bottom: 0.8rem;
+                    margin-bottom: 0.5rem;
+                    border-bottom: 2px solid currentColor
+                }
+            }
+        }
+
+        .footer__social{
+            margin-top: 3rem;
+            font-size: 1.5rem;
+    
+            .social-link{
+                color: $text-color-black;
+                &:not(:first-child){
+                    margin-left: 1.2rem;
+                }
+            }
+        }
+
+        &-menu{
+            display: flex;
+            justify-content: space-between;
+            .footer-column{
+                .footer__heading{
+                    font-size: 2.2rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+
+                .footer__item{
+                    margin-top: 3.8rem;
+
+                    .footer__link{  
+                    font-size: 1.5rem;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                    a{
+                        color: $text-color-black;
+                    }
+                    
+                    &:not(:first-child){
+                        margin-top: 2.3rem;
+                    }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 5rem 0 12rem 0;
+        &__top{
+            flex-direction: column;
+        }
+        &__logo,
+        &__form{
+            width: 100%;
+        }
+
+        &__title{
+            text-align: center;
+            display: block;
+        }
+
+        &__decs{
+            margin-top: 1.2rem;
+
+            span{
+                display: contents;
+                line-height: 1.5;
+            }
+        }
+
+        &__form{
+            margin-top: 3rem;
+            .form-email{
+                margin-top: 1.5rem;
+            }
+        }
+
+        &__bottom{
+            margin-top: 3rem;
+            flex-direction: column;
+            &-address,
+            &-menu{
+                width: 100%;
+                text-align: center;
+                margin-top: 4rem;
+            }
+
+            .address-group{
+                justify-content: center;
+            }
+        }
+    }
+    
+}

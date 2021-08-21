@@ -1,0 +1,96 @@
+.tachen {
+  margin-top: 12rem;
+  height: 747px;
+  background-image: url(/vendor/image/bg-tachen.png);
+  object-fit: cover;
+  background-position: center center;
+  background-size: cover;
+  background-origin: content-box;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+
+  &__group {
+    position: absolute;
+    left: 220px;
+    bottom: 106px;
+
+    &-name {
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: $text-color-black;
+    }
+
+    &-title {
+      font-size: 8rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $text-color-black;
+      margin: 32px 0;
+    }
+
+    &-decs {
+      font-size: 1.8rem;
+      font-weight: 100;
+      color: $text-color-black;
+    }
+
+    &-btn {
+      margin-top: 3.2rem;
+      .btn-text:not(:first-child) {
+        margin-left: 3.7rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+      height: 48rem;
+  }
+  
+
+  @media screen and (max-width: 1023px) {
+    height: 35rem;
+
+    &__group {
+      left: 5rem;
+    }
+
+    &__group-btn {
+      margin-top: 1.2rem;
+    }
+
+    &__group-title {
+      font-size: 2rem;
+      margin: 10px 0;
+    }
+
+    .banner__group-decs {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    height: 18rem;
+    margin-top: 4rem;
+
+    &__group {
+      left: 1rem;
+      bottom: 30px;
+    }
+
+    &__group-btn {
+      margin-top: 1.2rem;
+    }
+
+    &__group-title {
+      font-size: 2rem;
+      margin: 10px 0;
+    }
+
+    &__group-decs {
+      font-size: 1.3rem;
+    }
+  }
+}

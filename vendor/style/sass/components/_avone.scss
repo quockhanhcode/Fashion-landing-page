@@ -1,0 +1,62 @@
+.avone{
+    margin-top: 12rem;
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        height: 66.7rem;
+        margin-top: 6rem;
+    }
+
+    &__item{
+        position: relative;
+        width: calc(50% - 12.5px);
+
+        &:first-child{
+            .avone-img{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+        &:last-child{
+            .avone-img:first-child{
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            .avone-img:nth-child(2){
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: 3;
+            }
+
+            .avone-img:last-child{
+                position: absolute;
+                z-index: 2;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        margin-top: 6rem;
+        &__list{
+            height: 50.7rem;
+            margin-top: 4rem;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-top: 4rem;
+        &__list{
+            height: 19rem;
+        }
+    }
+    
+    
+}

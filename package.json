@@ -1,0 +1,14 @@
+{
+  "name": "fashion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sasstocss": "node-sass vendor/style/sass/style.scss vendor/style/css/style.css -w"
+  },
+  "author": "khanh",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
